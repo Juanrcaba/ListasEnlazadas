@@ -12,7 +12,7 @@ namespace ListasEnlazadasSimples
             this.start = null;
             this.end = null;
         }
-		public new void InsertRange(T[] Array)
+		public  void InsertRange(T[] Array)
 		{
 			// por cada elemento del arreglo crea un nodo
 			for (int n = 0; n < Array.Length; n++)
@@ -47,7 +47,7 @@ namespace ListasEnlazadasSimples
 				_Count++;
 			}
 		}
-			public new void InsertAt(int index, T Dato)
+			public  void InsertAt(int index, T Dato)
 		{
 			Nodo<T> newNode = new Nodo<T>(Dato);
 			Nodo<T> current = this.start;
